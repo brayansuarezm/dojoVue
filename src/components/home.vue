@@ -1,9 +1,9 @@
 <template>
   <div>
     <h2>home</h2>
-    <h1>{{tareas}}</h1>
+    <h1>{{texto}}</h1>
     <input type="text" placeholder="Introducir texto" v-model="nuevaTexto">
-    <input type="button" value="Enviar tarea" v-on:click="agregarTarea">
+    <input type="button" value="Tomar texto" v-on:click="agregarTexto">
 
   </div>
 </template>
@@ -13,12 +13,12 @@ export default{
 data(){
   return {
     nuevaTexto:null,
-    tareas:null
+    texto:null
   }
 },
 methods:{
-    agregarTarea(){
-      this.tareas=this.nuevaTexto;
+    agregarTexto(){
+      this.texto=this.nuevaTexto;
     },
 },
 }
