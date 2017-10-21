@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h2>Contacto</h2>
+    <h2>Cursos</h2>
     <ul>
-        <li v-for="tarea in tareas">
-          {{ tarea }}
+        <li v-for="materia in materias">
+          {{ materia }}
         </li>
     </ul>
   </div>
@@ -12,7 +12,7 @@
 <script>
 export default{
   data(){
-    return {tareas:[
+    return {materias:[
       'Calculo',
       'Fisica',
       'Algebra',
